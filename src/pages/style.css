@@ -1,0 +1,58 @@
+:root {
+    --subj1: hsl(0, 20%, 35%);
+    --subj2: hsl(60, 20%, 35%);
+    --subj3: hsl(120, 20%, 35%);
+    --subj4: hsl(180, 20%, 35%);
+    --subj5: hsl(240, 20%, 35%);
+    --subj6: hsl(300, 20%, 35%);
+}
+.square {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    background-color: var(--subj1);
+    margin: 50px;
+    line-height: 100px;
+}
+
+/* .one { animation: rotate 3s infinite;} */
+.one:hover { animation: rotate 2s;}
+@keyframes rotate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+#general {
+    background-color: var(--subj1);
+    color: white;
+}
+
+#math {
+    background-color: var(--subj2);
+    color: white;
+}
+
+#science {
+    background-color: var(--subj3);
+    color: white;
+}
+
+#social-studies {
+    background-color: var(--subj4);
+    color: white;
+}
+
+#english {
+    background-color: var(--subj5);
+    color: white;
+}
+
+#all {
+    background-color: var(--subj6);
+    color: white;
+}
+
+#none {
+    background-color: white;
+    border: 2px solid black;
+}
